@@ -1,3 +1,21 @@
+<div>
+  <ol>
+    <li>
+      <mat-form-field appearance="fill">
+        <mat-label>What's your name?</mat-label>
+        <input matInput [(ngModel)]="name">
+      </mat-form-field>
+    </li>
+    <li>
+      <button mat-raised-button (click)="openDialog()">Pick one</button>
+    </li>
+    <li *ngIf="sport">
+      You chose: <i>{{sport}}</i>
+    </li>
+  </ol>  
+</div>
+
+<!-- Diseño de formulario preestablecido
 <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
   <mat-card class="shipping-card">
     <mat-card-header>
@@ -97,4 +115,4 @@
       <button mat-raised-button color="primary" type="submit">Submit</button>
     </mat-card-actions>
   </mat-card>
-</form>
+</form> -->

@@ -7,8 +7,8 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
 const routes: Routes = [
   {path:'home', component: NavegacionComponent,
     children:[
-      {path:'dashboard', component: DashboardComponent},
-      {path:'formulario', component: FormularioComponent}
+      {path:'formulario', component: FormularioComponent},
+      {path:'dashboard', component: DashboardComponent}
     ]
   },
   {path:'**', pathMatch: 'full', redirectTo: 'home'}

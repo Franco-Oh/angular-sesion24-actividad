@@ -19,15 +19,19 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FormularioDialogoComponent } from './formulario-dialogo/formulario-dialogo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavegacionComponent,
     DashboardComponent,
-    FormularioComponent
+    FormularioComponent,
+    FormularioDialogoComponent
   ],
+  entryComponents:[],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -44,7 +48,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
